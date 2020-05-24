@@ -3,8 +3,8 @@ package question1;
 /**
  * Classe-test FahrenheitCelsiusTest.
  * 
- * @author (votre nom)
- * @version (un numéro de version ou une date)
+ * @author Remy Zakarian
+ * @version 21-5-2020
  * 
  *          Les classes-test sont documentées ici :
  *          http://junit.sourceforge.net/javadoc/junit/framework/TestCase.html
@@ -69,6 +69,10 @@ public class FahrenheitCelsiusTest extends junit.framework.TestCase {
 		assertEquals("  100 °F -> 37.7 °C ? ", 37.7, question1.FahrenheitCelsius.fahrenheitEnCelsius(100), 0.1);
 		assertEquals(" 2000 °F -> 1093.3 °C ?", 1093.3, question1.FahrenheitCelsius.fahrenheitEnCelsius(2000), 0.1);
 		assertEquals("   54 °F -> 12.2 °C ?", 12.2, question1.FahrenheitCelsius.fahrenheitEnCelsius(54), 0.1);
-	}
+	        assertEquals("   60 °F -> 15.5 °C ?", 15.5, question1.FahrenheitCelsius.fahrenheitEnCelsius(60),0.1);
+	        assertEquals("   -55 °F -> -48.3 °C ?", -48.3, question1.FahrenheitCelsius.fahrenheitEnCelsius(-55),0.1);
+	        assertEquals("   -1000000 °F -> -555573.3 °C ?", -555573.3, question1.FahrenheitCelsius.fahrenheitEnCelsius(-1000000),0.1);
+                
+	       }
 	
 }
